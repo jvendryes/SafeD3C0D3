@@ -1,3 +1,7 @@
-<p>
-  base64 works!
-</p>
+<h2>Encoded Base64</h2>
+<textarea [(ngModel)]="rawBase64"></textarea>
+
+<h2>Decoded Base64</h2>
+<div class="decoded-output">
+  {{rawBase64 | base64Decode}}
+</div>
