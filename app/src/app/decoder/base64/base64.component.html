@@ -1,7 +1,11 @@
-<h2>Encoded Base64</h2>
-<textarea [(ngModel)]="rawBase64"></textarea>
-
-<h2>Decoded Base64</h2>
-<div class="decoded-output">
-  {{rawBase64 | base64Decode}}
+<h1 class="title">Base64 Decode</h1>
+<div class="columns">
+  <div class="column is-half">
+    <textarea class="textarea" [(ngModel)]="rawBase64" rows="10" placeholder="SW5zZXJ0IGEgQmFzZTY0IGVuY29kZWQgc3RyaW5nIGhlcmUuLi4="></textarea>
+  </div>
+  <div class="column is-half">
+    <div class="box decoded-output">
+      {{rawBase64 | base64Decode}}
+    </div>
+  </div>
 </div>
