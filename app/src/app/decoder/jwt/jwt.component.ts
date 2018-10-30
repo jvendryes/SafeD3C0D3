@@ -24,13 +24,18 @@ export class JwtComponent implements OnInit {
       jwtHeader = base64DecodePipe.transform(jwtSplit[0]);
       jwtPayload = base64DecodePipe.transform(jwtSplit[1]);
 
-      this.jwt['header'] = JSON.stringify(JSON.parse(jwtHeader), null, 2);
-      this.jwt['payload'] = JSON.stringify(JSON.parse(jwtPayload), null, 2);
+      try {
+        this.jwt['header'] = JSON.stringify(JSON.parse(jwtHeader), null, 2);
+        this.jwt['payload'] = JSON.stringify(JSON.parse(jwtPayload), null, 2);
+      } catch (e) {
+        this.jwt['header'] = jwtHeader;
+        this.jwt['payload'] = jwtPayload;
+      }
 
       if (Object.keys(this.jwt).length > 0) {
-          this.validJwt = true;
+        this.validJwt = true;
       } else {
-          this.validJwt = false;
+        this.validJwt = false;
       }
     } else {
       this.validJwt = false;
