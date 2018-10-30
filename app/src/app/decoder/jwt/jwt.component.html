@@ -1,3 +1,19 @@
-<p>
-  jwt works!
-</p>
+<h1 class="title">JWT Decode</h1>
+<div class="columns">
+  <div class="column is-half">
+    <textarea class="textarea" [ngModel]="rawJwt" (keyup)="parseJwt($event)" rows="10" placeholder="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiY29udGVudCI6Ikluc2VydCBhIEpXVCBoZXJlLi4uIiwiaWF0IjoxNTE2MjM5MDIyfQ.c7NcTfSF23L0XOS_jiXzaH_jWziqcbi1poVyOMbXaQ0"></textarea>
+  </div>
+  <div class="column is-half">
+    <div class="box decoded-output">
+      <div *ngIf="validJwt">
+        <h6 class="subtitle is-6">Header</h6>
+        <hr>
+        <pre>{{jwt.header}}</pre>
+        <hr>
+        <h6 class="subtitle is-6">Payload</h6>
+        <hr>
+        <pre>{{jwt.payload}}</pre>
+      </div>
+    </div>
+  </div>
+</div>
