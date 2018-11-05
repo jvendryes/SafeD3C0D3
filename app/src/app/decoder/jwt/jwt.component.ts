@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, Pipe} from '@angular/core';
 import {Base64DecodePipe} from "../../base64-decode.pipe";
 
 @Component({
@@ -8,37 +8,53 @@ import {Base64DecodePipe} from "../../base64-decode.pipe";
 })
 export class JwtComponent implements OnInit {
 
-  public rawJwt: string = "";
   public jwt: Object = {};
-  public validJwt: boolean = false;
+  public showParsedInput: boolean = false;
+  public inputError: boolean = false;
+  public showInputError: boolean = false;
 
   constructor() {
   }
 
-  parseJwt(jwt: any) {
-    if(jwt.target.value.length > 0) {
-      let jwtHeader, jwtPayload: string;
-      let jwtSplit = jwt.target.value.split('.');
-      let base64DecodePipe = new Base64DecodePipe();
+  // Parse the input as JSON then return a new JSON object with spaces for formatting
+  formatJson(decodedString: string, spaces: number): string {
+    let formattedJson: string;
 
-      jwtHeader = base64DecodePipe.transform(jwtSplit[0]);
-      jwtPayload = base64DecodePipe.transform(jwtSplit[1]);
+    try {
+      formattedJson = JSON.stringify(JSON.parse(decodedString), null, spaces);
+      // this.inputError = false;
+    } catch (e) {
+      // this.inputError = true;
+      return "The decoded input couldn't be processed as JSON";
+    }
 
-      try {
-        this.jwt['header'] = JSON.stringify(JSON.parse(jwtHeader), null, 2);
-        this.jwt['payload'] = JSON.stringify(JSON.parse(jwtPayload), null, 2);
-      } catch (e) {
-        this.jwt['header'] = jwtHeader;
-        this.jwt['payload'] = jwtPayload;
-      }
+    return formattedJson;
+  }
+
+  // Parse the input, treat it as a JWT
+  // TODO: Is there a better type than 'any' like 'KeyboardEvent'?
+  parseJwt(event: any) {
+    let jwtParsed: string[];
+    let jwtHeader, jwtPayload: string;
+    let base64DecodePipe: Base64DecodePipe = new Base64DecodePipe();
+
+    if(event.target.value.length > 0) {
+      jwtParsed = event.target.value.split('.');
+      jwtHeader = base64DecodePipe.transform(jwtParsed[0]);
+      jwtPayload = base64DecodePipe.transform(jwtParsed[1]);
+
+      this.jwt['header'] = this.formatJson(jwtHeader, 2);
+      this.jwt['payload'] = this.formatJson(jwtPayload, 2);
 
       if (Object.keys(this.jwt).length > 0) {
-        this.validJwt = true;
-      } else {
-        this.validJwt = false;
+        this.showParsedInput = true;
+        // if (this.inputError){
+        //   this.showInputError = true;
+        // }
       }
     } else {
-      this.validJwt = false;
+      this.showParsedInput = false;
+      // this.showInputError = false;
     }
   }
 

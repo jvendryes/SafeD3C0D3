@@ -13,7 +13,7 @@ export class Base64DecodePipe implements PipeTransform {
               return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
           }).join(''));
       } catch (e) {
-          return `The supplied value ("${value}") doesn't appear to be Base64 encoded`;
+          return "The supplied input doesn't appear to be properly Base64 encoded";
       }
     }
   }
