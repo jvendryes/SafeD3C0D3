@@ -33,7 +33,7 @@ export class JwtComponent implements OnInit {
 
   // Parse the input, treat it as a JWT
   // TODO: Is there a better type than 'any' like 'KeyboardEvent'?
-  parseJwt(event: any) {
+  parseJwt(event: any): void {
     let jwtParsed: string[];
     let jwtHeader, jwtPayload: string;
     let base64DecodePipe: Base64DecodePipe = new Base64DecodePipe();

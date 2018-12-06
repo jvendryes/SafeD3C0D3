@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'SafeDC0D3';
+
+  title:string = 'SafeDC0D3';
+  navStatus: boolean = false;
+
+  toggleNav(): void {
+    this.navStatus = !this.navStatus;
+  }
+
+  closeNav(): void {
+    this.navStatus = false;
+  }
+
 }
