@@ -8,5 +8,8 @@ RUN set -x \
 
 # Stage 2
 FROM nginx:1.15-alpine
+RUN apk update \
+    && apk upgrade
+COPY ./configs/nginx/default.conf /etc/nginx/conf.d
 RUN rm -rf /usr/share/nginx/html/*
 COPY --from=builder /SafeDC0D3/dist/SafeDC0D3 /usr/share/nginx/html

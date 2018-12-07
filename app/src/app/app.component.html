@@ -7,14 +7,14 @@
       <span>{{ title }}</span>
     </a>
 
-    <a (click)="toggleNav()" [ngClass]="navStatus ? 'is-active' : ''" role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbar-basic">
+    <a (click)="toggleNav()" [ngClass]="{'is-active': navStatus === true}" role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbar-basic">
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
     </a>
   </div>
 
-  <div id="navbar-basic" class="navbar-menu" [ngClass]="navStatus ? 'is-active' : ''">
+  <div id="navbar-basic" class="navbar-menu" [ngClass]="{'is-active': navStatus === true}">
     <div class="navbar-start">
       <a (click)="closeNav()" class="navbar-item" routerLinkActive="is-active" routerLink="/decoder/jwt">JWT</a>
       <a (click)="closeNav()" class="navbar-item" routerLinkActive="is-active" routerLink="/decoder/base64">Base64</a>
