@@ -3,4 +3,4 @@ services:
   decode:
     build: .
     ports:
-      - "80"
+      - "80:8080"
