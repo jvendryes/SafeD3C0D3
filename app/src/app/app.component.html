@@ -7,21 +7,17 @@
       <span>{{ title }}</span>
     </a>
 
-    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+    <a (click)="toggleNav()" [ngClass]="{'is-active': navStatus === true}" role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbar-basic">
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
     </a>
   </div>
 
-  <div id="navbarBasicExample" class="navbar-menu">
+  <div id="navbar-basic" class="navbar-menu" [ngClass]="{'is-active': navStatus === true}">
     <div class="navbar-start">
-      <a class="navbar-item" routerLinkActive="is-active" routerLink="/decoder/jwt">
-        JWT
-      </a>
-      <a class="navbar-item" routerLinkActive="is-active" routerLink="/decoder/base64">
-        Base64
-      </a>
+      <a (click)="closeNav()" class="navbar-item" routerLinkActive="is-active" routerLink="/decoder/jwt">JWT</a>
+      <a (click)="closeNav()" class="navbar-item" routerLinkActive="is-active" routerLink="/decoder/base64">Base64</a>
     </div>
   </div>
 </nav>
