@@ -1,4 +1,4 @@
-# SafeDC0D3
+# SafeD3C0D3
 A lightweight app that simply decodes data in browser memory.
 
 ## Why
@@ -12,7 +12,7 @@ with your data.
 Yes, you could absolutely inspect the traffic to see what is being transmitted or spend the time to reverse minified and 
 uglified JavaScript but who takes the time to do that? What about server-side calls that return decoded data? No idea.
 
-The point of SafeDC0D3 is to give you more confidence that the data you supply isn't being abused by third parties.
+The point of SafeD3C0D3 is to give you more confidence that the data you supply isn't being abused by third parties.
 
 ## How
 - All data supplied to the app is handled in browser memory, the only network requests made are the ones required
@@ -28,12 +28,28 @@ for the app to load
 
 ## Getting Started
 
-### Installation
+### Running SafeDCOD3
+SafeDCOD3 has primarily been designed to run as a Docker container.
 
-### Usage
+#### Docker Hub
+```
+docker pull 
+```
+
+If you prefer to build the project locally:
+
+#### Docker
+
+```
+docker build -f Dockerfile -t safed3c0d3:latest .
+docker run --name "decode" -p "80:8080" --restart "always" -d safed3c0d3:latest
+```
 
 #### Docker Compose
+If you are using Docker Compose, you can run the included `docker-compose.yml` file like so:
 
-#### Traefik
+```
+docker-compose up -d
+```
 
 ## Contributing

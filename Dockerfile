@@ -1,6 +1,6 @@
 # Stage 1
 FROM node:10.15-slim AS builder
-WORKDIR /SafeDC0D3
+WORKDIR /SafeD3C0D3
 COPY ./app/ .
 RUN set -x \
     && npm install \
@@ -12,7 +12,7 @@ RUN apk update \
     && apk upgrade
 COPY ./configs/nginx/default.conf /etc/nginx/conf.d
 RUN rm -rf /usr/share/nginx/html/*
-COPY --from=builder /SafeDC0D3/dist/SafeDC0D3 /usr/share/nginx/html
+COPY --from=builder /SafeD3C0D3/dist/SafeD3C0D3 /usr/share/nginx/html
 
 # Run with least privilege
 RUN touch /var/run/nginx.pid && \
