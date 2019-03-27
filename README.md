@@ -15,16 +15,19 @@ uglified JavaScript but who takes the time to do that? What about server-side ca
 The point of SafeD3C0D3 is to give you more confidence that the data you supply isn't being abused by third parties.
 
 ## How
+- You have access to the source code, feel free to review it
 - All data supplied to the app is handled in browser memory, the only network requests made are the ones required
 for the app to load
-- Utilizing a strict Content Security Policy (CSP) with SHA-256 hash signatures
-- The NGINX Docker container runs a non-root user
 
 ## Features
 - JWT decoding
 - Base64 decoding
 - Support for UTF-8 and UTF-16
 - Responsive UI to minimize footprint
+
+### Security Features
+- Utilizing a strict Content Security Policy (CSP) with SHA-256 hash signatures
+- The NGINX Docker container runs a non-root user
 
 ## Getting Started
 
@@ -33,7 +36,7 @@ SafeDCOD3 has primarily been designed to run as a Docker container.
 
 #### Docker Hub
 ```
-docker pull 
+
 ```
 
 If you prefer to build the project locally:
@@ -46,7 +49,7 @@ docker run --name "decode" -p "80:8080" --restart "always" -d safed3c0d3:latest
 ```
 
 #### Docker Compose
-If you are using Docker Compose, you can run the included `docker-compose.yml` file like so:
+If you are using Docker Compose, you can run the included `docker-compose.yml` file with:
 
 ```
 docker-compose up -d

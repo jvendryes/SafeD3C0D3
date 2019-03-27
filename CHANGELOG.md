@@ -10,6 +10,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 - Started to follow Semantic Versioning
 
 ### Changed
+- Renamed SafeDC0D3 to SafeD3C0D3
 - Bulma 0.7.4 update
 - Made Angular routing default to the "JWT Decode" page
 - Minor UI improvements
