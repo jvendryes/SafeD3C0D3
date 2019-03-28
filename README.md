@@ -1,6 +1,8 @@
 # SafeD3C0D3
 A lightweight app that simply decodes data in browser memory.
 
+![SafeD3C0D3 Demo](http://url/to/img.png)
+
 ## Why
 As we know, encoded data is not encrypted data and sometimes data that should be encrypted is **incorrectly** stored in 
 an encoded format. For instance, maybe someone has put PII or other sensitive information in a JWT payload.
