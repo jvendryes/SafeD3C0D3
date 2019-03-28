@@ -1,7 +1,7 @@
 # SafeD3C0D3
 A lightweight app that simply decodes data in browser memory.
 
-![SafeD3C0D3 Demo](http://url/to/img.png)
+![SafeD3C0D3 Demo](https://github.com/jvendryes/SafeD3C0D3/blob/master/docs/assets/images/SafeD3C0D3-demo.gif)
 
 ## Why
 As we know, encoded data is not encrypted data and sometimes data that should be encrypted is **incorrectly** stored in 
