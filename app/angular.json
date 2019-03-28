@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "SafeDC0D3": {
+    "SafeD3C0D3": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/SafeDC0D3",
+            "outputPath": "dist/SafeD3C0D3",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -55,18 +55,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "SafeDC0D3:build"
+            "browserTarget": "SafeD3C0D3:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "SafeDC0D3:build:production"
+              "browserTarget": "SafeD3C0D3:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "SafeDC0D3:build"
+            "browserTarget": "SafeD3C0D3:build"
           }
         },
         "test": {
@@ -100,7 +100,7 @@
         }
       }
     },
-    "SafeDC0D3-e2e": {
+    "SafeD3C0D3-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -108,11 +108,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "SafeDC0D3:serve"
+            "devServerTarget": "SafeD3C0D3:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "SafeDC0D3:serve:production"
+              "devServerTarget": "SafeD3C0D3:serve:production"
             }
           }
         },
@@ -128,5 +128,5 @@
       }
     }
   },
-  "defaultProject": "SafeDC0D3"
+  "defaultProject": "SafeD3C0D3"
 }

@@ -9,6 +9,6 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to SafeDC0D3!');
+    expect(page.getParagraphText()).toEqual('Welcome to SafeD3C0D3!');
   });
 });

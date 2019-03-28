@@ -1,6 +1,6 @@
 {
-  "name": "safeDC0D3",
-  "version": "0.0.0",
+  "name": "SafeD3C0D3",
+  "version": "0.1.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -23,7 +23,7 @@
     "@fortawesome/angular-fontawesome": "^0.3.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.7",
     "@fortawesome/free-solid-svg-icons": "^5.4.2",
-    "bulma": "^0.7.2",
+    "bulma": "^0.7.4",
     "core-js": "^2.5.4",
     "rxjs": "~6.4.0",
     "tslib": "^1.9.0",

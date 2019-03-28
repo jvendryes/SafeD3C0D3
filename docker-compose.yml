@@ -1,6 +1,8 @@
-version: '3'
+version: '3.5'
 services:
   decode:
     build: .
+    container_name: decode
+    restart: always
     ports:
       - "80:8080"
