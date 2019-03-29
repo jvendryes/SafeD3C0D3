@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
 
   title:string = 'SafeD3C0D3';
-  version:string = '0.1.0';
+  version:string = '0.1.1';
   navStatus: boolean = false;
 
   toggleNav(): void {
