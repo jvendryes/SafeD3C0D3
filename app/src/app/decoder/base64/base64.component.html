@@ -1,11 +1,16 @@
 <h1 class="title">Base64 Decode</h1>
 <div class="columns">
-  <div class="column is-half">
-    <textarea class="textarea" [(ngModel)]="rawBase64" rows="10" placeholder="SW5zZXJ0IGEgQmFzZTY0IGVuY29kZWQgc3RyaW5nIGhlcmUuLi4="></textarea>
-  </div>
-  <div class="column is-half">
-    <div class="box decoded-output">
-      <pre>{{rawBase64 | base64Decode}}</pre>
+    <div class="column is-half">
+        <textarea
+            class="textarea"
+            [(ngModel)]="rawBase64"
+            rows="10"
+            placeholder="SW5zZXJ0IGEgQmFzZTY0IGVuY29kZWQgc3RyaW5nIGhlcmUuLi4="
+        ></textarea>
     </div>
-  </div>
+    <div class="column is-half">
+        <div class="box decoded-output">
+            <pre>{{ rawBase64 | base64Decode }}</pre>
+        </div>
+    </div>
 </div>
