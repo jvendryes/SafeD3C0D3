@@ -3,10 +3,11 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog], and this project adheres to [Semantic Versioning].
 
-## 0.1.1 - 2019-03-28
+## 0.1.1 - 2019-03-29
 ### Added
 - Added CODEOWNERS
-- Added Prettier config
+- Added Prettier
+- Added a pre-commit hook for running Prettier
 
 ### Changed
 - Updated README.md with Docker Hub information

@@ -1,5 +1,12 @@
 .*
 *.ico
-*.json
 *.md
+angular.json
 browserslist
+tsconfig.e2e.json
+package.json
+package-lock.json
+tsconfig.json
+tsconfig.app.json
+tsconfig.spec.json
+tslint.json
