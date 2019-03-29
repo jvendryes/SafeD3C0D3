@@ -1,7 +1,7 @@
 # SafeD3C0D3
 A lightweight app that simply decodes data in browser memory.
 
-![SafeD3C0D3 Demo](https://github.com/jvendryes/SafeD3C0D3/blob/master/docs/assets/images/SafeD3C0D3-demo.gif)
+![SafeD3C0D3 Demo]
 
 ## Why
 As we know, encoded data is not encrypted data and sometimes data that should be encrypted is **incorrectly** stored in 
@@ -38,7 +38,7 @@ SafeDCOD3 has primarily been designed to run as a Docker container.
 
 #### Docker Hub
 ```
-
+docker pull jvendryes/safed3c0d3:latest
 ```
 
 If you prefer to build the project locally:
@@ -47,7 +47,7 @@ If you prefer to build the project locally:
 
 ```
 docker build -f Dockerfile -t safed3c0d3:latest .
-docker run --name "decode" -p "80:8080" --restart "always" -d safed3c0d3:latest
+docker run --name "decode" -p "80:8080" -d safed3c0d3:latest
 ```
 
 #### Docker Compose
@@ -57,4 +57,13 @@ If you are using Docker Compose, you can run the included `docker-compose.yml` f
 docker-compose up -d
 ```
 
+## Changelog
+[Read about the changes] made to SafeD3C0D3.
+
 ## Contributing
+[Contributions] are welcomed and encouraged! Not sure where to start? When you're ready, review the [open issues].
+
+[SafeD3C0D3 Demo]: https://github.com/jvendryes/SafeD3C0D3/blob/master/docs/assets/images/SafeD3C0D3-demo.gif
+[Read about the changes]: https://github.com/jvendryes/SafeD3C0D3/blob/master/CHANGELOG.md
+[Contributions]: https://github.com/jvendryes/SafeD3C0D3/blob/master/CONTRIBUTING.md
+[open issues]: https://github.com/jvendryes/SafeD3C0D3/issues

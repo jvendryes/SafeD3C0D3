@@ -1,7 +1,17 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+The format is based on [Keep a Changelog], and this project adheres to [Semantic Versioning].
+
+## 0.1.1 - 2019-03-28
+### Added
+- Added CODEOWNERS
+- Added Prettier config
+
+### Changed
+- Updated README.md with Docker Hub information
+- Reformatted app code with Prettier rules
+- Disabled conflicting rules between Prettier and TSLint
 
 ## 0.1.0 - 2019-03-27
 ### Added
@@ -24,3 +34,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 - Minor UI improvements
 - Angular 7.2 update
 - Dependency updates
+
+[Keep a Changelog]: https://keepachangelog.com/en/1.0.0/
+[Semantic Versioning]: https://semver.org/spec/v2.0.0.html
