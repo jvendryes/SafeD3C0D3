@@ -8,15 +8,7 @@ import { Base64Component } from './base64/base64.component';
 import { Base64DecodePipe } from '../base64-decode.pipe';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    DecoderRoutingModule
-  ],
-  declarations: [
-    JwtComponent,
-    Base64Component,
-    Base64DecodePipe
-  ]
+    imports: [CommonModule, FormsModule, DecoderRoutingModule],
+    declarations: [JwtComponent, Base64Component, Base64DecodePipe]
 })
-export class DecoderModule { }
+export class DecoderModule {}

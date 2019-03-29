@@ -1,20 +1,20 @@
 .decoded-output pre {
-  background-color:transparent;
-  padding-top:0;
-  padding-bottom:0;
-  white-space:pre-wrap;
+    background-color: transparent;
+    padding-top: 0;
+    padding-bottom: 0;
+    white-space: pre-wrap;
 }
 
 .decoded-output hr {
-  height:1px;
-  margin-top:1rem;
-  margin-bottom:1rem;
+    height: 1px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .decoded-output .subtitle:not(:last-child) {
-  margin-bottom:1rem;
+    margin-bottom: 1rem;
 }
 
 .input-error {
-  background-color:#FFEBEA;
+    background-color: #ffebea;
 }

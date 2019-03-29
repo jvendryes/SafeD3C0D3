@@ -1,19 +1,25 @@
 <h1 class="title">JWT Decode</h1>
 <div class="columns">
-  <div class="column is-half">
-    <textarea class="textarea" [class.input-error]="showInputError" (keyup)="parseJwt($event)" rows="10" placeholder="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiY29udGVudCI6Ikluc2VydCBhIEpXVCBoZXJlLi4uIiwiaWF0IjoxNTE2MjM5MDIyfQ.c7NcTfSF23L0XOS_jiXzaH_jWziqcbi1poVyOMbXaQ0"></textarea>
-  </div>
-  <div class="column is-half">
-    <div class="box decoded-output">
-      <div *ngIf="showParsedInput">
-        <h6 class="subtitle is-6 jwt-header">Header</h6>
-        <hr>
-        <pre class="jwt-header">{{jwt.header}}</pre>
-        <hr>
-        <h6 class="subtitle is-6 jwt-payload">Payload</h6>
-        <hr>
-        <pre class="jwt-payload">{{jwt.payload}}</pre>
-      </div>
+    <div class="column is-half">
+        <textarea
+            class="textarea"
+            [class.input-error]="showInputError"
+            (keyup)="parseJwt($event)"
+            rows="10"
+            placeholder="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiY29udGVudCI6Ikluc2VydCBhIEpXVCBoZXJlLi4uIiwiaWF0IjoxNTE2MjM5MDIyfQ.c7NcTfSF23L0XOS_jiXzaH_jWziqcbi1poVyOMbXaQ0"
+        ></textarea>
     </div>
-  </div>
+    <div class="column is-half">
+        <div class="box decoded-output">
+            <div *ngIf="showParsedInput">
+                <h6 class="subtitle is-6 jwt-header">Header</h6>
+                <hr />
+                <pre class="jwt-header">{{ jwt.header }}</pre>
+                <hr />
+                <h6 class="subtitle is-6 jwt-payload">Payload</h6>
+                <hr />
+                <pre class="jwt-payload">{{ jwt.payload }}</pre>
+            </div>
+        </div>
+    </div>
 </div>
