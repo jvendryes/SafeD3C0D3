@@ -38,7 +38,7 @@ SafeDCOD3 has primarily been designed to run as a Docker container.
 
 #### Docker Hub
 ```
-docker pull jvendryes/safed3c0d3:latest
+docker pull jvendryes/safed3c0d3
 ```
 
 If you prefer to build the project locally:
