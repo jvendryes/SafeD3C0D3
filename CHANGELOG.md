@@ -3,7 +3,19 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog], and this project adheres to [Semantic Versioning].
 
-## 0.1.1 - 2019-03-29
+## [0.1.2] - 2019-03-30
+### Added
+- Added happy path e2e tests (`ng e2e`)
+
+### Changed
+- Updated README.md with proper Docker Hub image
+- Updated generated unit tests with dependencies so they pass (`ng test`)
+- Updated some files to minimize linting errors (`ng lint`)
+
+### Removed
+- Unused error class code
+
+## [0.1.1] - 2019-03-29
 ### Added
 - Added CODEOWNERS
 - Added Prettier
@@ -38,3 +50,5 @@ The format is based on [Keep a Changelog], and this project adheres to [Semantic
 
 [Keep a Changelog]: https://keepachangelog.com/en/1.0.0/
 [Semantic Versioning]: https://semver.org/spec/v2.0.0.html
+[0.1.1]: https://github.com/jvendryes/SafeD3C0D3/releases/tag/0.1.1
+[0.1.2]: https://github.com/jvendryes/SafeD3C0D3/releases/tag/0.1.2

@@ -1,11 +1,27 @@
 import { browser, by, element } from 'protractor';
 
 export class AppPage {
-    navigateTo() {
-        return browser.get('/');
+    navigateTo(url) {
+        return browser.get(url);
     }
 
-    getParagraphText() {
-        return element(by.css('sdc-root h1')).getText();
+    getCurrentRoute() {
+        return browser.getCurrentUrl();
+    }
+
+    getInput() {
+        return browser.findElement(by.tagName('textarea'));
+    }
+
+    getDecodedJwtHeader() {
+        return browser.findElement(by.tagName('pre[class=jwt-header]'));
+    }
+
+    getDecodedJwtPayload() {
+        return browser.findElement(by.tagName('pre[class=jwt-payload]'));
+    }
+
+    getDecodedB64() {
+        return browser.findElement(by.tagName('pre'));
     }
 }
