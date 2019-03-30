@@ -4,15 +4,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog], and this project adheres to [Semantic Versioning].
 
 ## [0.1.2] - 2019-03-30
-## Added
+### Added
 - Added happy path e2e tests (`ng e2e`)
 
-## Changed
+### Changed
 - Updated README.md with proper Docker Hub image
 - Updated generated unit tests with dependencies so they pass (`ng test`)
 - Updated some files to minimize linting errors (`ng lint`)
 
-## Removed
+### Removed
 - Unused error class code
 
 ## [0.1.1] - 2019-03-29
