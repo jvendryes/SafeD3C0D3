@@ -3,6 +3,12 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog], and this project adheres to [Semantic Versioning].
 
+## [0.1.3] - 2019-04-01
+### Changed
+- Updated CONTRIBUTING.md with information
+- Updated `@angular/cli` to 7.3.7
+- Updated `@angular/core` to 7.2.11
+
 ## [0.1.2] - 2019-03-30
 ### Added
 - Added happy path e2e tests (`ng e2e`)
@@ -52,3 +58,4 @@ The format is based on [Keep a Changelog], and this project adheres to [Semantic
 [Semantic Versioning]: https://semver.org/spec/v2.0.0.html
 [0.1.1]: https://github.com/jvendryes/SafeD3C0D3/releases/tag/0.1.1
 [0.1.2]: https://github.com/jvendryes/SafeD3C0D3/releases/tag/0.1.2
+[0.1.3]: https://github.com/jvendryes/SafeD3C0D3/releases/tag/0.1.3
