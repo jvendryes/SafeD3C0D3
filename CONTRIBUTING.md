@@ -54,13 +54,13 @@ Angular uses [Jasmine] as it's test framework. Run the tests with: `ng test`.
 #### End-to-end Tests
 Angular uses [Protractor] for end-to-end testing. Run the tests with: `ng e2e`.
 
-### Submitting Pull Requests
+## Submitting Pull Requests
 Your pull requests are welcome, here is the process:
 - Fork the repo and create a branch from `master`
 - Care about quality (see [Ground Rules])
 - Open a detailed pull request with reference to any issue numbers
 
-#### Reviews
+### Reviews
 The goal is to review your pull request in a timely manner. Not all pull requests are accepted, for example:
 - Features that don't fit with roadmap
 - Coding style guidelines are not met
