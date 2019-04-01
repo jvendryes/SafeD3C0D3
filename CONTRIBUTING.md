@@ -25,18 +25,18 @@ There are many ways you can help contribute, here are a few examples:
 [GitHub issues] are used for all contributions. Feature requests, improvements and bug reports should be created as an 
 issue. Issue templates are in place so be sure to pick the correct type.
 
-### Development
+## Development
 The [Angular CLI] is used for development. To start the project with the CLI run `ng serve`.
 
 This project follows [Semantic Versioning], please ensure that you update version numbers as appropriate.
 
-#### Coding Style
+### Coding Style
 This is an Angular app, following the [Angular Style Guide] is the chosen best practice.
 
-#### Linting
+### Linting
 Angular uses [TSLint] and [Codelyzer] for it's linting rules. Run the linter with `ng lint`.
 
-#### Code Formatting
+### Code Formatting
 This project is using [Prettier] rules for code formatting. You'll find the defined rules in the `.prettierrc.json` file 
 and while files that won't be formatted in the `.prettierignore` file. To ensure consistent formatting, a 
 [Git pre-commit hook] is defined in the `package.json` file.
@@ -44,14 +44,14 @@ and while files that won't be formatted in the `.prettierignore` file. To ensure
 Conflicting Prettier and TSLint rules have been removed from the `tslint.json` file which results in TSLint only 
 concerning itself with linting and Prettier only concerning itself with formatting.
 
-#### Testing
+### Testing
 This project utilizes the standard testing libraries provided by the Angular CLI. Read the 
 [Angular testing documentation] for more information.
 
-##### Unit Tests
+#### Unit Tests
 Angular uses [Jasmine] as it's test framework. Run the tests with: `ng test`.
 
-##### End-to-end Tests
+#### End-to-end Tests
 Angular uses [Protractor] for end-to-end testing. Run the tests with: `ng e2e`.
 
 ### Submitting Pull Requests
