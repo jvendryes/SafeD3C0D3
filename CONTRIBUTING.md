@@ -3,6 +3,20 @@ First off, thank you for showing interest in contributing!
 
 Contributing should be easy and welcoming, following this guide should help you get started.
 
+## Table of Contents
+1. [Ground Rules](#ground-rules)
+2. [How To Contribute](#how-to-contribute)
+    - [Issue Tracking](#issue-tracking)
+3. [Development](#development)
+    - [Coding Style](#coding-style)
+    - [Linting](#linting)
+    - [Code Formatting](#code-formatting)
+    - [Testing](#testing)
+        - [Unit Tests](#unit-tests)
+        - [End-to-end Tests](#end-to-end-tests)
+4. [Submitting Pull Requests](#submitting-pull-requests)
+    - [Reviews](#reviews)
+
 ## Ground Rules
 - Be kind, respectful, and constructive
 - Care about quality by:
