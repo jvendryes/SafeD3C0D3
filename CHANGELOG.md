@@ -3,6 +3,10 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog], and this project adheres to [Semantic Versioning].
 
+## [0.1.4] - 2019-04-01
+### Changed
+- Fixed the broken "Version" link with the proper path to the CHANGELOG.md file (#12)
+
 ## [0.1.3] - 2019-04-01
 ### Changed
 - Updated CONTRIBUTING.md with information
