@@ -19,3 +19,4 @@ RUN touch /var/run/nginx.pid && \
   chown -R nginx:nginx /var/run/nginx.pid && \
   chown -R nginx:nginx /var/cache/nginx
 USER nginx
+
