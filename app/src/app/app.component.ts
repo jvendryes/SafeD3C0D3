@@ -20,7 +20,7 @@ export class AppComponent implements OnInit {
 
     ngOnInit(): void {
         this.title = 'SafeD3C0D3';
-        this.version = '0.1.2';
+        this.version = '0.1.3';
         this.navStatus = false;
     }
 }
