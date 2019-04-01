@@ -3,15 +3,6 @@ First off, thank you for showing interest in contributing!
 
 Contributing should be easy and welcoming, following this guide should help you get started.
 
-There are many ways you can help contribute, here are a few examples:
-- New functionality
-- Security improvements
-- UI or UX improvements
-- Bug fixes
-- Performance tuning
-- Automated testing
-- Improving documentation
-
 ## Ground Rules
 - Be kind, respectful, and constructive
 - Care about quality by:
@@ -20,6 +11,14 @@ There are many ways you can help contribute, here are a few examples:
     - Documenting your code and your changes
 
 ## How To Contribute
+There are many ways you can help contribute, here are a few examples:
+- New functionality
+- Security improvements
+- UI or UX improvements
+- Bug fixes
+- Performance tuning
+- Automated testing
+- Improving documentation
 
 ### Issue Tracking
 [GitHub issues] are used for all contributions. Feature requests, improvements and bug reports should be created as an 
