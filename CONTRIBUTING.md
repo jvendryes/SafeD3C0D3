@@ -18,7 +18,7 @@ Contributing should be easy and welcoming, following this guide should help you 
     - [Reviews](#reviews)
 
 ## Ground Rules
-- Be kind, respectful, and constructive
+- Be kind, respectful, and constructive (see [Code of Conduct])
 - Care about quality by:
     - Testing your changes and add new tests if needed
     - Ensuring existing tests and linters pass
@@ -83,6 +83,7 @@ The goal is to review your pull request in a timely manner. Not all pull request
 
 When in doubt, feel free to ask!
 
+[Code of Conduct]: https://github.com/jvendryes/SafeD3C0D3/blob/master/CODE_OF_CONDUCT.md
 [Github issues]: https://github.com/jvendryes/SafeD3C0D3/issues
 [Ground Rules]: #ground-rules
 [Angular Style Guide]: https://angular.io/guide/styleguide
