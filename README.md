@@ -33,8 +33,8 @@ for the app to load
 
 ## Getting Started
 
-### Running SafeDCOD3
-SafeDCOD3 has primarily been designed to run as a Docker container.
+### Running SafeD3COD3
+SafeD3COD3 has primarily been designed to run as a Docker container.
 
 #### Docker Hub
 To run from a Docker Hub hosted image:
