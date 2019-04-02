@@ -37,13 +37,15 @@ for the app to load
 SafeDCOD3 has primarily been designed to run as a Docker container.
 
 #### Docker Hub
+To run from a Docker Hub hosted image:
+
 ```
 docker pull jvendryes/safed3c0d3
+docker run --name "decode" -p "80:8080" -d jvendryes/safed3c0d3:latest
 ```
 
-If you prefer to build the project locally:
-
 #### Docker
+If you prefer to clone and build the project locally:
 
 ```
 docker build -f Dockerfile -t safed3c0d3:latest .
