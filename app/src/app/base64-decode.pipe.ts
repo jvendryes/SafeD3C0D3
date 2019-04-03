@@ -4,7 +4,7 @@ import { Pipe, PipeTransform } from '@angular/core';
     name: 'base64Decode'
 })
 export class Base64DecodePipe implements PipeTransform {
-    transform(value: any, args?: any): any {
+    transform(value: any): any {
         if (value !== undefined) {
             try {
                 // Handle the "Unicode Problem": https://developer.mozilla.org/en-US/docs/Web/API/WindowBase64/Base64_encoding_and_decoding#The_Unicode_Problem
