@@ -1,5 +1,10 @@
-import { Component, OnInit, Pipe } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Base64DecodePipe } from '../../base64-decode.pipe';
+
+interface JwtInterface {
+    header?: string;
+    payload?: string;
+}
 
 @Component({
     selector: 'sdc-jwt',
@@ -7,7 +12,7 @@ import { Base64DecodePipe } from '../../base64-decode.pipe';
     styleUrls: ['./jwt.component.scss']
 })
 export class JwtComponent implements OnInit {
-    public jwt: object;
+    public jwt: JwtInterface;
     public showParsedInput: boolean;
 
     constructor() {}
@@ -25,20 +30,20 @@ export class JwtComponent implements OnInit {
     }
 
     // Parse the input, treat it as a JWT
-    // TODO: Is there a better type than 'any' like 'KeyboardEvent'?
-    parseJwt(event: any): void {
+    parseJwt(event: Event): void {
+        let eventTarget = event.target as HTMLInputElement;
         let jwtParsed: string[];
         let jwtHeader: string;
         let jwtPayload: string;
         const base64DecodePipe: Base64DecodePipe = new Base64DecodePipe();
 
-        if (event.target.value.length > 0) {
-            jwtParsed = event.target.value.split('.');
+        if (eventTarget.value.length > 0) {
+            jwtParsed = eventTarget.value.split('.');
             jwtHeader = base64DecodePipe.transform(jwtParsed[0]);
             jwtPayload = base64DecodePipe.transform(jwtParsed[1]);
 
-            this.jwt['header'] = this.formatJson(jwtHeader, 2);
-            this.jwt['payload'] = this.formatJson(jwtPayload, 2);
+            this.jwt.header = this.formatJson(jwtHeader, 2);
+            this.jwt.payload = this.formatJson(jwtPayload, 2);
 
             if (Object.keys(this.jwt).length > 0) {
                 this.showParsedInput = true;
