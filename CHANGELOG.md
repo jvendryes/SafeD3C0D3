@@ -3,6 +3,15 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog], and this project adheres to [Semantic Versioning].
 
+## [0.1.5] - 2019-04-03
+### Added
+- Updated tsconfig.json to set `noUnusedLocals` and `noImplicitAny` as `true`
+
+### Changed
+- Moved from `any` to `Event` type when parsing a JWT
+- Updated the app and tests to work with new tsconfig options listed in "Added" above
+- Updated `@angular/core` to 7.2.12
+
 ## [0.1.4] - 2019-04-01
 ### Changed
 - Fixed the broken "Version" link with the proper path to the CHANGELOG.md file ([#12])
