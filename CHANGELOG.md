@@ -73,4 +73,5 @@ The format is based on [Keep a Changelog], and this project adheres to [Semantic
 [0.1.2]: https://github.com/jvendryes/SafeD3C0D3/releases/tag/0.1.2
 [0.1.3]: https://github.com/jvendryes/SafeD3C0D3/releases/tag/0.1.3
 [0.1.4]: https://github.com/jvendryes/SafeD3C0D3/releases/tag/0.1.4
+[0.1.5]: https://github.com/jvendryes/SafeD3C0D3/releases/tag/0.1.5
 [#12]: https://github.com/jvendryes/SafeD3C0D3/issues/12
