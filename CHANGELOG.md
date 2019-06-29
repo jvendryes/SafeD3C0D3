@@ -10,6 +10,7 @@ The format is based on [Keep a Changelog], and this project adheres to [Semantic
 - Updated `@angular/core` to 8.0.3
 - Updated NGINX Docker image to 1.17-alpine
 - Updated Node Docker image to 10.16-slim
+- Explicitly set `APP_ID` to allow sha256 hashes for CSP support
 
 ## [0.1.5] - 2019-04-03
 ### Added
