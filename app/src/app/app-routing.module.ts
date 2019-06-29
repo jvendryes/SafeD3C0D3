@@ -4,7 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 const routes: Routes = [
     {
         path: 'decoder',
-        loadChildren: 'src/app/decoder/decoder.module#DecoderModule'
+        loadChildren: () => import('src/app/decoder/decoder.module').then(m => m.DecoderModule)
     },
     {
         path: '',

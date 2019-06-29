@@ -3,6 +3,15 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog], and this project adheres to [Semantic Versioning].
 
+## [0.2.0] - 2019-06-29
+### Changed
+- Upgrade to Angular 8 from Angular 7
+- Updated `@angular/cli` to 8.0.6
+- Updated `@angular/core` to 8.0.3
+- Updated NGINX Docker image to 1.17-alpine
+- Updated Node Docker image to 10.16-slim
+- Explicitly set `APP_ID` to allow sha256 hashes for CSP support
+
 ## [0.1.5] - 2019-04-03
 ### Added
 - Updated tsconfig.json to set `noUnusedLocals` and `noImplicitAny` as `true`
@@ -74,4 +83,5 @@ The format is based on [Keep a Changelog], and this project adheres to [Semantic
 [0.1.3]: https://github.com/jvendryes/SafeD3C0D3/releases/tag/0.1.3
 [0.1.4]: https://github.com/jvendryes/SafeD3C0D3/releases/tag/0.1.4
 [0.1.5]: https://github.com/jvendryes/SafeD3C0D3/releases/tag/0.1.5
+[0.2.0]: https://github.com/jvendryes/SafeD3C0D3/releases/tag/0.2.0
 [#12]: https://github.com/jvendryes/SafeD3C0D3/issues/12

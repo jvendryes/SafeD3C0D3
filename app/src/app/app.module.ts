@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, APP_ID } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,7 +14,7 @@ library.add(faLock);
 @NgModule({
     declarations: [AppComponent],
     imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
-    providers: [],
+    providers: [{ provide: APP_ID, useValue: 'safed3c0d3' }],
     bootstrap: [AppComponent]
 })
 export class AppModule {}

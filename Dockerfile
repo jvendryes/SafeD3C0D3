@@ -1,5 +1,5 @@
 # Stage 1
-FROM node:10.15-slim AS builder
+FROM node:10.16-slim AS builder
 WORKDIR /SafeD3C0D3
 COPY ./app/ .
 RUN set -x \
@@ -7,7 +7,7 @@ RUN set -x \
     && node_modules/@angular/cli/bin/ng build --prod
 
 # Stage 2
-FROM nginx:1.15-alpine
+FROM nginx:1.17-alpine
 RUN apk update \
     && apk upgrade
 COPY ./configs/nginx/default.conf /etc/nginx/conf.d
