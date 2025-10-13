@@ -1,0 +1,7 @@
+services:
+  decode:
+    build: .
+    container_name: decode
+    restart: always
+    ports:
+      - "8080:8080"

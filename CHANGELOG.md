@@ -3,6 +3,10 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog], and this project adheres to [Semantic Versioning].
 
+## [1.0.0] - 2025-10-12
+### Changed
+- Upgrade to Angular 20 from Angular 8
+
 ## [0.2.0] - 2019-06-29
 ### Changed
 - Upgrade to Angular 8 from Angular 7
@@ -84,4 +88,4 @@ The format is based on [Keep a Changelog], and this project adheres to [Semantic
 [0.1.4]: https://github.com/jvendryes/SafeD3C0D3/releases/tag/0.1.4
 [0.1.5]: https://github.com/jvendryes/SafeD3C0D3/releases/tag/0.1.5
 [0.2.0]: https://github.com/jvendryes/SafeD3C0D3/releases/tag/0.2.0
-[#12]: https://github.com/jvendryes/SafeD3C0D3/issues/12
+[1.0.0]: https://github.com/jvendryes/SafeD3C0D3/releases/tag/1.0.0
