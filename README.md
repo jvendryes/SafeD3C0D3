@@ -41,7 +41,7 @@ To run from a Docker Hub hosted image:
 
 ```
 docker pull jvendryes/safed3c0d3
-docker run --name "decode" -p "80:8080" -d jvendryes/safed3c0d3:latest
+docker run --name "decode" -p "8080:8080" -d jvendryes/safed3c0d3:latest
 ```
 
 #### Docker
@@ -49,7 +49,7 @@ If you prefer to clone and build the project locally:
 
 ```
 docker build -f Dockerfile -t safed3c0d3:latest .
-docker run --name "decode" -p "80:8080" -d safed3c0d3:latest
+docker run --name "decode" -p "8080:8080" -d safed3c0d3:latest
 ```
 
 #### Docker Compose
