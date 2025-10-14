@@ -65,7 +65,7 @@ docker-compose up -d
 ## Contributing
 [Contributions] are welcomed and encouraged! Not sure where to start? When you're ready, review the [open issues].
 
-[SafeD3C0D3 Demo]: https://github.com/jvendryes/SafeD3C0D3/blob/master/docs/assets/images/SafeD3C0D3-demo.gif
-[Read about the changes]: https://github.com/jvendryes/SafeD3C0D3/blob/master/CHANGELOG.md
-[Contributions]: https://github.com/jvendryes/SafeD3C0D3/blob/master/CONTRIBUTING.md
+[SafeD3C0D3 Demo]: https://github.com/jvendryes/SafeD3C0D3/blob/main/docs/assets/images/SafeD3C0D3-demo.gif
+[Read about the changes]: https://github.com/jvendryes/SafeD3C0D3/blob/main/CHANGELOG.md
+[Contributions]: https://github.com/jvendryes/SafeD3C0D3/blob/main/CONTRIBUTING.md
 [open issues]: https://github.com/jvendryes/SafeD3C0D3/issues
